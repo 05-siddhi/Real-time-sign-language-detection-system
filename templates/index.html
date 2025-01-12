@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gesture Detection</title>
+</head>
+<body>
+    <h1>Welcome to Sign language detection</h1>
+    <button onclick="window.location.href='/object_detection'">Word Gesture Detection</button>
+    <button onclick="window.location.href='/recognize_character'">Recognize Character</button>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesture Detection</title>
+    <style>
+        body {
+            background-image: url('/static/sign.jpg'); /* Replace 'background_image.jpg' with the path to your image */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            color: white;
+            margin-top: 20px;
+            font-size: 60px; /* Increased font size for the h1 */
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        button {
+            background-color: black;
+            color: white;
+            padding: 15px 30px; /* Increased padding for the buttons */
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px; /* Increased border radius for smoother edges */
+            font-size: 20px; /* Increased font size for the buttons */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Sign Language detection</h1>
+    <div class="button-container">
+        <button onclick="window.location.href='/object_detection'">Word Gesture Detection</button>
+        <button onclick="window.location.href='/recognize_character'">Recognize Character</button>
+    </div>
+</body>
+</html>

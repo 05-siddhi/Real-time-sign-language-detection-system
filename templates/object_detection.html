@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <h1>Word Recognition</h1>
+    <div>
+        <img id="objectDetection" src="{{ url_for('video_feed') }}" width="640" height="480">
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Recognition</title>
+    <style>
+        body {
+            background-image: url('/static/sign.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            padding-top: 20px;
+            font-size: 60px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 100px); /* Adjusted height to leave space for the header */
+        }
+        #objectDetection {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Word Recognition</h1>
+    <div class="container">
+        <img id="objectDetection" src="{{ url_for('video_feed') }}" width="640" height="480">
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Recognition</title>
+</head>
+<body>
+    <h1>Character Recognition</h1>
+    <div>
+        
+        <img id="characterRecognition" src="{{ url_for('video_feed_') }}" width="640" height="480">
+    </div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Recognition</title>
+    <style>
+        body {
+            background-image: url('/static/sign.jpg'); /* Replace '/path/to/background_image.jpg' with the path to your image */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            padding-top: 20px;
+            font-size: 60px; /* Increased font size for the h1 */
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 40px); /* Adjusted height to leave space for the header */
+        }
+        #objectDetection {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Character Recognition</h1>
+    <div class="container">
+        <img id="characterRecognition" src="{{ url_for('video_feed_') }}" width="640" height="480">
+    </div>
+</body>
+</html>
